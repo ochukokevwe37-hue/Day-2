@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fffaf4;
+}
+
+header {
+  background: #ff8800;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.payment-hero {
+  background: linear-gradient(to right, #ff8800, #ffb347);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.payment-hero h1 {
+  font-size: 50px;
+}
+
+.payment-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.order-summary,
+.payment-methods {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2,
+.payment-methods h2 {
+  color: #ff8800;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.total {
+  color: #ff8800;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.method-card {
+  background: #fff3e0;
+  border-left: 5px solid #ff8800;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.method-card:hover {
+  background: #ffe0b3;
+}
+
+.payment-methods input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  background: #ff8800;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #e67300;
+}
+
+.trust-section {
+  max-width: 1200px;
+  margin: 20px auto 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.trust-card {
+  background: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: #ff8800;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .payment-container {
+    grid-template-columns: 1fr;
+    margin: 24px auto;
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .trust-section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .payment-hero h1 {
+    font-size: 35px;
+  }
+
+  .payment-hero {
+    padding: 54px 18px;
+  }
+
+  .order-summary,
+  .payment-methods {
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .payment-hero h1 {
+    font-size: 30px;
+  }
+
+  .card-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

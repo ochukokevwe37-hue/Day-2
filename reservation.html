@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation - Orange Bistro</title>
+    <link rel="stylesheet" href="css/reservation.css" />
+    <link rel="stylesheet" href="css/mobile-nav.css" />
+    <script src="js/mobile-nav.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">🍽 Orange Bistro</div>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="galary.html">Gallery</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+      </nav>
+      <button
+        class="menu-backdrop"
+        type="button"
+        aria-label="Close navigation menu"
+        hidden
+      ></button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Reserve Your Table</h1>
+        <p>Book a memorable dining experience with family and friends.</p>
+      </div>
+    </section>
+
+    <section class="reservation-container">
+      <div class="reservation-form">
+        <h2>Book a Table</h2>
+
+        <form>
+          <input type="text" placeholder="Full Name" required />
+
+          <input type="email" placeholder="Email Address" required />
+
+          <input type="tel" placeholder="Phone Number" required />
+
+          <input type="date" required />
+
+          <input type="time" required />
+
+          <select required>
+            <option>Select Guests</option>
+            <option>1 Person</option>
+            <option>2 People</option>
+            <option>3 People</option>
+            <option>4 People</option>
+            <option>5+ People</option>
+          </select>
+
+          <button type="submit">Reserve Now</button>
+        </form>
+      </div>
+
+      <div class="gallery">
+        <h2>Dining Experience</h2>
+
+        <div class="gallery-grid">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0"
+            alt="People eating"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+            alt="Restaurant guests"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9"
+            alt="Family dinner"
+          />
+
+          <img
+            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"
+            alt="Friends eating"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Orange Bistro. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
